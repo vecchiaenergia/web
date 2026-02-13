@@ -1,0 +1,29 @@
+/* Custom Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.3s ease-out;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth Scroll Padding */
+html {
+    scroll-padding-top: 80px;
+}
+
