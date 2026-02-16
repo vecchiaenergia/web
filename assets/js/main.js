@@ -44,18 +44,42 @@ function togglePortfolio() {
     const extra = document.getElementById('portfolio-extra');
     const btnText = document.getElementById('btn-text');
     const btnArrow = document.getElementById('btn-arrow');
+    const cards = extra.querySelectorAll(':scope > div');
+    const isHidden = extra.style.display === 'none';
     
-    if (extra.classList.contains('hidden')) {
-        extra.classList.remove('hidden');
+    if (isHidden) {
         extra.style.display = 'grid';
+        extra.classList.remove('collapsing');
         btnText.textContent = 'Ver Menos';
         btnArrow.style.transform = 'rotate(180deg)';
+
+        cards.forEach((card, i) => {
+            card.style.transitionDelay = (i * 80) + 'ms';
+        });
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                extra.classList.add('revealing');
+            });
+        });
     } else {
-        extra.classList.add('hidden');
-        extra.style.display = 'none';
+        extra.classList.remove('revealing');
+        extra.classList.add('collapsing');
+
+        cards.forEach((card, i) => {
+            card.style.transitionDelay = (i * 30) + 'ms';
+        });
+
+        const totalTime = (cards.length * 30) + 300;
+        setTimeout(() => {
+            extra.style.display = 'none';
+            extra.classList.remove('collapsing');
+            cards.forEach(card => { card.style.transitionDelay = '0ms'; });
+            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+        }, totalTime);
+
         btnText.textContent = 'Ver Todos os Projetos (32)';
         btnArrow.style.transform = 'rotate(0deg)';
-        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
     }
 }
 

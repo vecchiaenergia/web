@@ -286,7 +286,7 @@
                 </div>
 
                 <!-- Projetos ocultos -->
-                <div id="portfolio-extra" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div id="portfolio-extra" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8" style="display: none;">
                     <!-- Projeto 03 -->
                     <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-video">
                         <img src="assets/img/portfolio/projeto-03.jpg" alt="Projeto Residencial - São José/SC" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
@@ -515,7 +515,7 @@
             </div>
         </section>
 
-        <!-- Testimonials (Google Reviews) -->
+        <!-- Testimonials - Infinite Marquee -->
         <section id="depoimentos" class="py-20 bg-gray-50 overflow-hidden">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -533,117 +533,53 @@
                         <span class="text-gray-500 text-sm ml-2">(15+ avaliações)</span>
                     </div>
                 </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Review 1 - José Guilherme -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">J</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">José Guilherme</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Empresa extremamente qualificada e confiável. Desde o primeiro contato, a proposta, a instalação e o pós-venda, tudo foi muito bem explicado e com clareza. Leonardo tirou todas as dúvidas durante o processo."</p>
-                    </div>
+            </div>
 
-                    <!-- Review 2 - Roderick Cabral -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">R</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Roderick Cabral</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Serviço excelente e atendimento ótimo! Vale cada centavo do investimento. Hoje em dia é cada vez mais difícil achar bons profissionais no mercado. Recomendo 100%!"</p>
-                    </div>
-
-                    <!-- Review 3 - Lucas Scherer -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">L</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Lucas Scherer</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Contratamos a VECCHIA fazem 2 anos e o serviço prestado foi excelente! A equipe é extremamente profissional, atenciosa e pronta para esclarecer qualquer dúvida. Recomendo fortemente!"</p>
-                    </div>
-
-                    <!-- Review 4 - Fábio Rene -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">F</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Fábio Rene</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Trabalho impecável! Atendimento atencioso e preço justo! Desde 2022, quando a VECCHIA instalou energia solar aqui em casa, não pagamos mais por energia... Recomendo!!!"</p>
-                    </div>
-
-                    <!-- Review 5 - Pedro Montoya -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">P</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Pedro Montoya</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Com certeza a empresa mais qualificada para a instalação de painéis solares. Tudo muito bem explicado e realizado. O valor do serviço é justo e os painéis são de última geração. Recomendo muito!"</p>
-                    </div>
-
-                    <!-- Review 6 - David Goldoni -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-12 bg-solar-green/10 rounded-full flex items-center justify-center text-solar-green font-bold">D</div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">David Goldoni</h4>
-                                <div class="flex text-solar-yellow">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 italic">"Empresa capacitada e atendimento exemplar. Resultados prometidos e cumpridos. Estou muito contente e recomendo!"</p>
-                    </div>
+            <!-- Marquee Row 1 - Left to Right -->
+            <div class="marquee-container mb-6">
+                <div class="marquee-track animate-marquee">
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">J</div><div><h4 class="rc-name">José Guilherme</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa extremamente qualificada e confiável. Desde o primeiro contato, a proposta, a instalação e o pós-venda, tudo foi muito bem explicado e com clareza."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">R</div><div><h4 class="rc-name">Roderick Cabral</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Serviço excelente e atendimento ótimo! Vale cada centavo do investimento. Hoje em dia é cada vez mais difícil achar bons profissionais. Recomendo 100%!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">E</div><div><h4 class="rc-name">Evelyn Correa</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa top! Indico de olhos fechados!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">T</div><div><h4 class="rc-name">Thayna Severiano</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa extremamente qualificada e confiável que garante sempre os melhores produtos para seus clientes!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">F</div><div><h4 class="rc-name">Fabrizio Dias</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Perfeito. Muito empenhado até a resolução final. Ótimo profissional, responsável e ótimo atendimento."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">L</div><div><h4 class="rc-name">Letícia Limas</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa excelente!! A assistência e colocação de novas placas foi executada com proficiência excepcional. Super recomendo!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">M</div><div><h4 class="rc-name">Marcelo dos Reis</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Muito tranquilo, bem esclarecido na negociação, bem instalado e nas datas marcadas sem atraso. Muito bom mesmo, show de bola!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">A</div><div><h4 class="rc-name">André Raupp</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Foi uma ótima experiência. Trabalho sério, técnico e organizado. Bom atendimento antes, durante e após a instalação."</p></div>
+                    <!-- Duplicate for infinite loop -->
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">J</div><div><h4 class="rc-name">José Guilherme</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa extremamente qualificada e confiável. Desde o primeiro contato, a proposta, a instalação e o pós-venda, tudo foi muito bem explicado e com clareza."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">R</div><div><h4 class="rc-name">Roderick Cabral</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Serviço excelente e atendimento ótimo! Vale cada centavo do investimento. Hoje em dia é cada vez mais difícil achar bons profissionais. Recomendo 100%!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">E</div><div><h4 class="rc-name">Evelyn Correa</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa top! Indico de olhos fechados!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">T</div><div><h4 class="rc-name">Thayna Severiano</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa extremamente qualificada e confiável que garante sempre os melhores produtos para seus clientes!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">F</div><div><h4 class="rc-name">Fabrizio Dias</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Perfeito. Muito empenhado até a resolução final. Ótimo profissional, responsável e ótimo atendimento."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">L</div><div><h4 class="rc-name">Letícia Limas</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa excelente!! A assistência e colocação de novas placas foi executada com proficiência excepcional. Super recomendo!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">M</div><div><h4 class="rc-name">Marcelo dos Reis</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Muito tranquilo, bem esclarecido na negociação, bem instalado e nas datas marcadas sem atraso. Muito bom mesmo, show de bola!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">A</div><div><h4 class="rc-name">André Raupp</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Foi uma ótima experiência. Trabalho sério, técnico e organizado. Bom atendimento antes, durante e após a instalação."</p></div>
                 </div>
-                
+            </div>
+
+            <!-- Marquee Row 2 - Right to Left -->
+            <div class="marquee-container">
+                <div class="marquee-track animate-marquee-reverse">
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">P</div><div><h4 class="rc-name">Pedro Montoya</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Com certeza a empresa mais qualificada para a instalação de painéis solares. O valor é justo e os painéis são de última geração. Recomendo muito!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">E</div><div><h4 class="rc-name">Eliz Subzero</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"A Vecchia foi a melhor dentre todos. Melhor valor e materiais de melhor qualidade. Pessoa confiável e trabalho de qualidade!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">I</div><div><h4 class="rc-name">Inês Casagrande</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Estou muito satisfeita com o investimento nas placas de energia solar, pela economia e pelo conservação do meio ambiente."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">F</div><div><h4 class="rc-name">Fábio Rene</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Trabalho impecável! Desde 2022, quando a VECCHIA instalou energia solar aqui em casa, não pagamos mais por energia... Recomendo!!!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">L</div><div><h4 class="rc-name">Lucas Scherer</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Contratamos a VECCHIA fazem 2 anos e o serviço foi excelente! Equipe extremamente profissional. Recomendo fortemente!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">D</div><div><h4 class="rc-name">David Goldoni</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa capacitada e atendimento exemplar. Resultados prometidos e cumpridos. Estou muito contente e recomendo!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">JG</div><div><h4 class="rc-name">José Guilherme</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Leonardo tirou todas as dúvidas, ofereceu as melhores opções e não mediu esforços para entregar um trabalho impecável."</p></div>
+                    <!-- Duplicate for infinite loop -->
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">P</div><div><h4 class="rc-name">Pedro Montoya</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Com certeza a empresa mais qualificada para a instalação de painéis solares. O valor é justo e os painéis são de última geração. Recomendo muito!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">E</div><div><h4 class="rc-name">Eliz Subzero</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"A Vecchia foi a melhor dentre todos. Melhor valor e materiais de melhor qualidade. Pessoa confiável e trabalho de qualidade!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">I</div><div><h4 class="rc-name">Inês Casagrande</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Estou muito satisfeita com o investimento nas placas de energia solar, pela economia e pelo conservação do meio ambiente."</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">F</div><div><h4 class="rc-name">Fábio Rene</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Trabalho impecável! Desde 2022, quando a VECCHIA instalou energia solar aqui em casa, não pagamos mais por energia... Recomendo!!!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">L</div><div><h4 class="rc-name">Lucas Scherer</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Contratamos a VECCHIA fazem 2 anos e o serviço foi excelente! Equipe extremamente profissional. Recomendo fortemente!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">D</div><div><h4 class="rc-name">David Goldoni</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Empresa capacitada e atendimento exemplar. Resultados prometidos e cumpridos. Estou muito contente e recomendo!"</p></div>
+                    <div class="review-card"><div class="rc-header"><div class="rc-avatar">JG</div><div><h4 class="rc-name">José Guilherme</h4><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div></div><p class="rc-text">"Leonardo tirou todas as dúvidas, ofereceu as melhores opções e não mediu esforços para entregar um trabalho impecável."</p></div>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6">
                 <div class="text-center mt-12" data-aos="fade-up">
                     <a href="https://www.google.com/search?q=VECCHIA+-+Solu%C3%A7%C3%B5es+em+Energia+Solar+Opiniones" target="_blank" class="text-solar-green font-bold hover:underline inline-flex items-center gap-2">
                         Ver todas as avaliações no Google
