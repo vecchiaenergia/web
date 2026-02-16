@@ -40,3 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function togglePortfolio() {
+    const extra = document.getElementById('portfolio-extra');
+    const btnText = document.getElementById('btn-text');
+    const btnArrow = document.getElementById('btn-arrow');
+    
+    if (extra.classList.contains('hidden')) {
+        extra.classList.remove('hidden');
+        extra.style.display = 'grid';
+        btnText.textContent = 'Ver Menos';
+        btnArrow.style.transform = 'rotate(180deg)';
+    } else {
+        extra.classList.add('hidden');
+        extra.style.display = 'none';
+        btnText.textContent = 'Ver Todos os Projetos (32)';
+        btnArrow.style.transform = 'rotate(0deg)';
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
